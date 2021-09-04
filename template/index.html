@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>RichPanel Assingment Akash Yadav</title>
+  </head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+      <h1 class="display-1">FaceBook Helpdesk</h1>
+      <hr class="my-12">
+      
+      <br><br><br><br>
+    </div>
+    <main class="container-fluid major col-md-6 " role="main">
+      <div id="signin" class="row first">
+        <div class="col-md-12">
+          <div class="container">
+            <br>
+            <h2 class="pb-4 mb-4 font-itaxlic display-6 text-center text-primary">
+              <strong> Please Sign in to Facebook </strong>
+              <hr>
+            </h2>
+            <a href="" id="loginbtn" class="fb-login-button">Login with facebook</a>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+      
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+          appId      : '3757381837820315',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v11.0'
+        });
+      
+        FB.AppEvents.logPageView();   
+        //fbSDKLoaded()
+  };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <script src="/script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
