@@ -11,6 +11,8 @@ app.use('/', express.static(path.join(__dirname, '/template')))
 
 app.use(bodyParser.json())
 
+let port = process.env.PORT || 8080;
+
 app.post('/login-with-facebook',async (req,res) => {
     const {accessToker, userID } = req.body
 
@@ -27,4 +29,4 @@ app.post('/login-with-facebook',async (req,res) => {
     }
 })
 
-app.listen(8080, _ => console.log('listening'))
+app.listen(port, _ => console.log('listening'))
